@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2021-07-23 11:54:47
+ * @LastEditTime: 2021-07-28 11:53:11
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /flutter_ume/kits/flutter_ume_kit_ui/test/components/widget_info_inspector/widget_info_inspector_test.dart
+ */
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -61,8 +69,7 @@ void main() {
       await tester.pump(Duration(seconds: 1));
       await tester.pumpAndSettle();
 
-      final Offset textLocation =
-          tester.getCenter(find.byWidgetPredicate((widget) {
+      final Offset textLocation = tester.getCenter(find.byWidgetPredicate((widget) {
         return widget is Text && widget.data == 'test text';
       }));
 

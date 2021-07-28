@@ -10,7 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  image: ^2.1.13
+  # image: ^2.1.13
+  image: 2.1.12
   flutter_ume: '>=0.1.0 <0.2.0'
 
 dev_dependencies:
